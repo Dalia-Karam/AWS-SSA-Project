@@ -17,9 +17,10 @@ Architecture Type: Serverless
 
 - Amazon CloudWatch – Provides logging and monitoring
 
-- Amazon S3 – Hosts the front-end application (if applicable)
+### Architecture
+![AWS Architecture](https://github.com/user-attachments/assets/031997a5-93d9-454b-a8cc-62494c160a64)
 
-<!-- Optionally insert a diagram if available -->
+
 
 ### ✨ Features
 - Create, Read, Update, Delete (CRUD) operations on records
@@ -31,8 +32,6 @@ Architecture Type: Serverless
 - Secure access control using IAM roles and resource policies
 
 - CloudWatch integration for logging and metrics
-
-- Optionally deploy a front-end on Amazon S3
 
 ### 📚 Learning Outcomes
 - Understand serverless architecture design
@@ -53,7 +52,7 @@ Architecture Type: Serverless
 
 - Node.js or Python (based on your Lambda functions)
 
-- Serverless Framework or AWS SAM (optional)
+- Serverless Framework
 
 #### Deployment Steps:
 - Clone the repository
@@ -66,16 +65,16 @@ Architecture Type: Serverless
 - Deploy infrastructure using your preferred method (e.g., Serverless Framework, AWS Console)
 
 - Test API endpoints using Postman or curl
-### 🧪 Sample API Endpoints
-- POST /items – Create a new item
+### 🧪 API Endpoints
+- POST /operations – Create a new item
 
-- GET /items – Retrieve all items
+- GET /operations – Retrieve all items
 
-- GET /items/{id} – Retrieve an item by ID
+- GET /operations/{id} – Retrieve an item by ID
 
-- PUT /items/{id} – Update an item
+- POST /operations/{id} – Update an item
 
-- DELETE /items/{id} – Delete an item
+- DELETE /operations/{id} – Delete an item
 
 ### 🔐 Security
 - IAM roles defined with least privilege principle
@@ -100,4 +99,3 @@ Architecture Type: Serverless
 
 - CloudWatch
 
-- S3 (optional for frontend hosting)
